@@ -16,6 +16,7 @@ app.get("/", (req, res) => {});
 app.use("/auth", require("./routes/auth"));
 app.use("/manufacturer", require("./routes/manufacturer"));
 app.use("/board", require("./routes/board"));
+app.use("/benchmark", require("./routes/benchmark"));
 
 app.use(errorHandler);
 
