@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.get("/", (req, res) => {});
 app.use("/auth", require("./routes/auth"));
 app.use("/manufacturer", require("./routes/manufacturer"));
+app.use("/board", require("./routes/board"));
 
 app.use(errorHandler);
 
